@@ -37,6 +37,9 @@ section{
 /*------------|---common css end--|---------------*/
 
 /*------------|---header part start--|---------------*/
+#header{
+    background-color: #1FAA59;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -65,3 +68,50 @@ section{
     font-size: 25px;
 }
 /*------------|---header part end--|---------------*/
+
+/*------------|---banner part start--|---------------*/
+#banner{
+    padding: 120px 0px;
+}
+.banner-items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+}
+.banner-left h3{
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 52px;
+}
+.banner-left p{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3A3A3A;
+    width: 500px;
+    padding-bottom: 16px;
+}
+.banner-left-btn a{
+   padding: 10px 24px;
+   background-color: #1FAA59;
+   border-radius: 30px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    top: 0px;
+    transition: linear .4s;
+}
+.banner-left-btn a:active{
+    top: 10px;
+}
+.banner-left-btn a:hover{
+    color: #1FAA59;
+    background-color: #d1d1d1;
+}
+.fa-long-arrow-right{
+    padding-left: 8px;
+    vertical-align: middle;
+}
+/*------------|---banner part end--|---------------*/
