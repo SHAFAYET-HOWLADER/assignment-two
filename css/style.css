@@ -71,7 +71,7 @@ section{
 
 /*------------|---banner part start--|---------------*/
 #banner{
-    padding: 10px 0px;
+    padding: 100px 0px;
 }
 .banner-items{
     display: grid;
@@ -136,7 +136,71 @@ section{
 /*------------|---logo part end--|---------------*/
 
 /*------------|---collection part start--|---------------*/
-#collection{
+#popular{
     padding: 100px 0px;
 }
+.popular-title{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.popular-items{
+    width: 329px;
+    height: 476px;
+    border-radius: 5px; 
+}
+.popular-photo{
+    padding: 15px;
+    box-shadow: 0px 0px 5px   #AAAAAA;
+}
+.popular-photo img{
+    width: 300px;
+    height: 256px;
+    object-fit: cover;
+}
+.popular-photo h3{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 28px;
+    text-transform: capitalize;
+    color: #18191F;
+    padding: 10px 0px; 
+}
+.popular-photo h4{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+    padding-bottom: 14px;
+}
+.popular-photo p{
+   color: #787885;
+   font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+    padding-top: 5px;
+}
+.review li{
+  display: inline-block;
+}
+.review li{
+  display: inline-block;
+}
+.review li .fa{
+ color:  #FB8200;
+}
+.review li small{
+    color: #5E6366;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+
+
 /*------------|---collection part end--|---------------*/
