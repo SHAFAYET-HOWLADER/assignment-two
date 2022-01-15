@@ -231,8 +231,8 @@ section{
 /*------------|---feature part start--|---------------*/
 #feature{
     background-color: #d1d1d1;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .feature-title {
     font-family: Poppins;
@@ -296,6 +296,7 @@ section{
 .feature-items{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    place-items: center;
 }
 .form{
     display: flex;
@@ -310,15 +311,33 @@ section{
     padding: 7px;
     margin: 5px 0px;
     border-radius: 5px;
+    border: 1px solid transparent;
 }
 .form .input, button{
     border: none;
-  max-width: 400px;
-  text-transform: capitalize;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+    max-width: 400px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    transition: linear .4s;
+}
+.form button a{
+    color: #fff;
+}
+.form button{
+    padding: 7px;
+    margin-top: 10px;
+    border-radius: 5px;
+     background-color:#1FAA59;
+     font-family: Poppins;
+     font-weight: 700;
+     font-size: 16px;
+     color: #fff;
+     cursor: pointer;
 }
 
-
-
+.form .input:focus{
+    box-shadow: 0px 0px 5px #aaa;
+    border: 1px solid #1FAA59;
+}
 /*------------|---feature part end--|---------------*/
