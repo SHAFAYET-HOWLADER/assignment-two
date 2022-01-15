@@ -1,6 +1,43 @@
 
 /* ---------|--start applying media query--|----------*/
 @media screen and (max-width: 575px){
+    /* navbar */
+    #label-icon {
+        display: block;
+        cursor: pointer;
+    }
+    .nav-text ul{
+        position: fixed;
+        top: 147px;
+        left: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       text-align: center;
+       padding: 10px 0px;
+       background-color: #d1d1d1;
+       transform: translateX(-800px);
+       transition: linear .4s;
+    }
+    .nav-text ul li a {
+        color: #1FAA59;
+    }
+    #nav-toggler:checked~.nav-text ul{
+       transform: translateX(0px);
+    }
+    .navbar {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-text ul li a {
+        font-size: 14px;
+        margin: 3px 15px;
+    }
+    .logo h3 {
+        font-size: 20px;
+    }
+    /* navbar */
     /* banner */
     #banner {
         padding: 20px 0px;
