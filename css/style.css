@@ -121,7 +121,7 @@ section{
     transition: linear .4s;
 }
 .banner-left-btn a i{
-    animation: safayet .4s ease-in-out infinite;
+    animation: safayet .5s ease infinite;
     margin-left: 20px;
 }
 @keyframes safayet{
@@ -129,7 +129,6 @@ section{
      top: 0px;
      left: 0px;
    }
-
    100%{
      transform: translateX(-20px);
    }
