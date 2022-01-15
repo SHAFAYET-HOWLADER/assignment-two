@@ -42,8 +42,9 @@ section{
     position: fixed;
     top: 0px;
     left: 0px;
+    right: 0px;
     width: 100%;
-    z-index: 999;
+    z-index: 1;
     background-color: rgba(31, 170, 89, 0.5); 
 }
 #nav-toggler{
@@ -85,7 +86,8 @@ section{
 
 /*------------|---banner part start--|---------------*/
 #banner{
-    padding: 200px 0px;
+    padding-top: 150px;
+    padding-bottom: 50px;
 }
 .banner-items{
     display: grid;
@@ -372,6 +374,7 @@ section{
  #footer{
      padding: 60px 0px;
      background-color: #000;
+     z-index: -1;
  }
  .footer-text{
      text-align: center;

@@ -1,11 +1,75 @@
 
 /* ---------|--start applying media query--|----------*/
 
-@media (min-width:768px) and (max-width: 992px){
+@media (min-width:1200px) and (max-width:1400px){
      /*--------navbar start------*/
-     #banner {
-        padding: 100px 0px;
+     .navbar{
+         height: 100%;
+     }
+     .banner-right img {
+        width: 100%;
     }
+     /*--------navbar start------*/
+}
+@media (min-width:992px) and (max-width: 1199px){
+     /*--------navbar start------*/
+     .navbar{
+         height: 100%;
+     }
+     .banner-right img {
+        width: 100%;
+    }
+     /*--------navbar start------*/
+}
+@media (min-width:768px) and (max-width: 991px){
+     /*--------navbar start------*/
+    .navbar{
+        height: 100%;
+    }
+         /*--------navbar start------*/
+         #label-icon {
+            display: block;
+            cursor: pointer;
+            flex: 2;
+            color: #fff;
+            font-size: 22px;
+        }
+        .navbar {
+            height: 100%;
+        }
+        .nav-text ul{
+            position: fixed;
+            top: 87px;
+            right: 0px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0px;
+            background-color: #d1d1d1;
+            transform: translateX(800px);
+            transition: linear .4s;
+            opacity: 0;
+        }
+        .nav-text ul li a {
+            color: #000;
+        }
+        #nav-toggler:checked~.nav-text ul{
+           transform: translateX(0px);
+           opacity: 1;
+        }
+        .navbar {
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .nav-text ul li a {
+            font-size: 14px;
+            margin: 3px 15px;
+        }
+     /*--------navbar start------*/
+
+     /*--------banner start------*/
     .banner-right img {
         width: 100%;
     }
@@ -21,7 +85,7 @@
         text-align: left;
         line-height: 25px;
     }
-     /*--------navbar start------*/
+     /*--------banner start------*/
 
      /*--------logo start------*/
      .logo-title {
@@ -51,27 +115,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*--------tablet device------*/
 @media (min-width:575px) and (max-width: 767px){
      /*--------navbar start------*/
@@ -82,9 +125,12 @@
         color: #fff;
         font-size: 22px;
     }
+    .navbar {
+        height: 100%;
+    }
     .nav-text ul{
         position: fixed;
-        top: 147px;
+        top: 87px;
         right: 0px;
         width: 100%;
         display: flex;
@@ -93,12 +139,14 @@
         background-color: #d1d1d1;
         transform: translateX(800px);
         transition: linear .4s;
+        opacity: 0;
     }
     .nav-text ul li a {
-        color: #1FAA59;
+        color: #000;
     }
     #nav-toggler:checked~.nav-text ul{
        transform: translateX(0px);
+       opacity: 1;
     }
     .navbar {
         flex-direction: row-reverse;
@@ -116,9 +164,6 @@
     /*--------navbar start------*/
 
     /*--------banner start------*/
-    #banner {
-        padding: 60px 0px;
-    }
     .banner-right img {
         width: 100%;
     }
@@ -204,38 +249,12 @@
     /*---------footer end------*/
  
 }
-@media (max-width: 574px){
-    .banner-right img {
-        width: 100%;
-    }
-}
 
 /*--------tablet device------*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*--------mobile device------*/
-@media (max-width: 575px){
+@media (max-width: 574px){
     /*--------navbar start------*/
     #label-icon {
         display: block;
@@ -246,7 +265,7 @@
     }
     .nav-text ul{
         position: fixed;
-        top: 147px;
+        top: 87px;
         right: 0px;
         width: 100%;
         display: flex;
@@ -255,18 +274,23 @@
         background-color: #d1d1d1;
         transform: translateX(800px);
         transition: linear .4s;
+        opacity: 0;
     }
     .nav-text ul li a {
-        color: #1FAA59;
+        color: #000;
     }
     #nav-toggler:checked~.nav-text ul{
        transform: translateX(0px);
+       opacity: 1;
     }
     .navbar {
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+    }
+    .navbar{
+        height: 100%;
     }
     .nav-text ul li a {
         font-size: 14px;
@@ -278,9 +302,6 @@
     /*--------navbar end------*/
 
     /*--------banner start------*/
-     #banner {
-        padding: 20px 0px;
-    }
     .banner-left{
       order: 2;
     }
@@ -308,7 +329,7 @@
         text-align: center;
     }
     .banner-right img{
-     margin: 0px auto;
+     width: 100%;
     } 
     /*--------banner end------*/
 
