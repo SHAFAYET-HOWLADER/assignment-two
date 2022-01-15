@@ -1,0 +1,111 @@
+
+/* ---------|--start applying media query--|----------*/
+@media screen and (max-width: 575px){
+    /* banner */
+    #banner {
+        padding: 20px 0px;
+    }
+    .banner-items {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .banner-left h3 {
+        font-size: 35px;
+    }
+    .banner-left p {
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        width: 96%;
+    }
+    .banner-left-btn a {
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+    .banner-left{
+        text-align: center;
+    }
+    .banner-right img{
+     margin: 0px auto;
+    }
+    /* banner */
+
+    /* client */
+    #logo {
+        padding: 50px 0px;
+    }
+    .logo-title {
+        font-size: 20px;
+        padding-bottom: 0px;
+    }
+    .logo-items {
+        grid-template-columns: repeat(2,1fr);
+        place-items: center;
+        row-gap: 50px;
+    }
+    /* client */
+
+    /* popular */
+    #popular {
+        padding: 50px 0px;
+    }
+    .popular-title {
+        font-size: 20px;
+    }
+    .popular-items {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .popular-photo h3 {
+        font-size: 20px;
+        padding: 5px 0px;
+    }
+    .see-more {
+        text-align: center;
+    }
+    .see-more a {
+        font-size: 14px;
+    }
+    /* popular */
+
+    /* feature */
+    #feature {
+        padding: 50px 0px;
+    }
+    .feature-title {
+        font-size: 20px;
+    }
+    .feature-items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: inherit;
+        row-gap: 50px;
+    }
+    .feature-left h2 {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+    .feature-left p {
+        font-size: 14px;
+        padding-bottom: 10px;
+        line-height: 22px;
+        text-align-last: left;
+        width: 100%;
+    }
+ 
+    .feature-left a {
+        padding: 5px 20px;
+        font-size: 14px;
+    }
+    .feature-right h2,span{
+        font-size: 25px; 
+    }
+    /* feature */
+
+    /* footer */
+    #footer {
+        padding: 20px 0px;
+    }
+    /* footer */
+
+}
+/* ---------|--end applying media query--|----------*/
