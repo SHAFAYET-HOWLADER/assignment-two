@@ -76,19 +76,19 @@ section{
 /*------------|---banner part start--|---------------*/
 #banner{
     padding: 200px 0px;
-    background-image: url(/images/banner-bg.jpg);
 }
 .banner-items{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
+    column-gap: 250px;
 }
-.banner-left h3{
+.banner-left h3 {
     font-family: Poppins;
     font-weight: 700;
-    font-size: 52px;
+    font-size: 50px;
 }
-.banner-left p{
+.banner-left p {
     font-family: Poppins;
     font-weight: 600;
     font-size: 16px;
@@ -96,6 +96,7 @@ section{
     width: 500px;
     padding-bottom: 16px;
     text-align: justify;
+    line-height: 30px;
 }
 .banner-left-btn a{
    padding: 10px 24px;
@@ -108,6 +109,21 @@ section{
     position: relative;
     top: 0px;
     transition: linear .4s;
+}
+.banner-left-btn a i{
+    animation: safayet .4s ease-in-out infinite;
+    margin-left: 20px;
+}
+@keyframes safayet{
+   0%{
+     top: 0px;
+     left: 0px;
+   }
+
+   100%{
+     transform: translateX(-20px);
+   }
+
 }
 .banner-left-btn a:active{
     top: 10px;
@@ -293,6 +309,11 @@ section{
     text-transform: capitalize;
     padding-bottom: 20px;
 }
+.feature-right i{
+  color: #fff;
+  font-size: 20px;
+  vertical-align: middle;
+}
 .feature-items{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -319,7 +340,6 @@ section{
     text-transform: capitalize;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    transition: linear .4s;
 }
 .form button a{
     color: #fff;
@@ -336,8 +356,48 @@ section{
      cursor: pointer;
 }
 
-.form .input:focus{
-    box-shadow: 0px 0px 5px #aaa;
-    border: 1px solid #1FAA59;
-}
 /*------------|---feature part end--|---------------*/
+
+/*------------|---footer part start--|---------------*/
+ #footer{
+     padding: 60px 0px;
+     background-color: #000;
+ }
+ .footer-text{
+     text-align: center;
+     color: #fff;
+ }
+ .footer-text h3{
+     color: #fff;
+     font-family: Poppins;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: capitalize;
+ }
+ .footer-text p{
+     padding: 6px 0px;
+ }
+ .footer-text p,small{
+    color: #D9DBE1;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: capitalize;
+ }
+.footer-social i{
+    margin: 10px 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+.footer-social i:hover{
+    background-color: #1FAA59;
+    color: #fff;
+    transition: linear .4s;
+}
+/*------------|---footer part end--|---------------*/
