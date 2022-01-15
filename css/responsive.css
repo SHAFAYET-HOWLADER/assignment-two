@@ -6,6 +6,9 @@
      #banner {
         padding: 100px 0px;
     }
+    .banner-right img {
+        width: 100%;
+    }
     .banner-items {
         column-gap: 0;
     }
@@ -64,7 +67,7 @@
 
 
 /*--------tablet device------*/
-@media (min-width:576px) and (max-width: 767px){
+@media (min-width:575px) and (max-width: 767px){
      /*--------navbar start------*/
      #label-icon {
         display: block;
@@ -187,7 +190,12 @@
         padding: 40px 0px;
     }
     /*---------footer end------*/
-
+ 
+}
+@media (max-width: 574px){
+    .banner-right img {
+        width: 100%;
+    }
 }
 
 /*--------tablet device------*/
