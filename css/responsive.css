@@ -30,6 +30,12 @@
      /*--------logo start------*/
 
      /*--------feature start------*/
+     .feature-items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: flex-start; 
+        row-gap: 50px;
+    }
      #feature {
         padding: 100px 0px;
     }
@@ -113,6 +119,9 @@
     #banner {
         padding: 60px 0px;
     }
+    .banner-right img {
+        width: 100%;
+    }
     .banner-items {
         grid-template-columns: repeat(1,1fr);
         place-items: center;
@@ -149,6 +158,9 @@
     /*--------popular start------*/
     .popular-title {
         font-size: 25px;
+    }
+    .popular-items {
+        grid-template-columns: repeat(2, 1fr);
     }
     /*--------popular end------*/
 
